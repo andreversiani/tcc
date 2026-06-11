@@ -1,0 +1,11 @@
+numpy
+scipy
+PyWavelets
+scikit-learn
+xgboost
+h5py
+pandas
+matplotlib
+seaborn
+jupyter
+ipykernel
