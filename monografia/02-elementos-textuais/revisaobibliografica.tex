@@ -176,6 +176,29 @@ produzem transientes capturados com eficácia pelos coeficientes wavelet,
 reforçando a utilidade da DWT como ferramenta de extração de atributos
 nesse cenário.
 
+Uma abordagem complementar e de grande relevância para a detecção de FAIs é o
+uso de \textbf{filtros rejeita-faixa harmônica} para isolar as componentes
+inter-harmônicas do sinal de corrente. A ideia central é que, durante uma FAI,
+a variação estocástica do comprimento do arco elétrico gera componentes de
+frequência que não são múltiplos inteiros da fundamental --- as chamadas
+inter-harmônicas --- enquanto, em condições normais, o espectro de corrente é
+dominado por harmônicas de ordem inteira e ruído de banda larga
+\cite{Macedo2015}. Para revelar essas componentes, aplica-se ao sinal um banco
+de filtros que rejeita as frequências harmônicas conhecidas
+($f_0$, $2f_0$, $3f_0$, $\ldots$), preservando o resíduo inter-harmônico sobre
+o qual são calculadas as métricas de detecção.
+
+\citeonline{Macedo2015} incorporaram esse banco de filtros a relés de
+religadores e seccionadores automáticos convencionais e validaram a metodologia
+em testes de campo em diferentes tipos de solo, com medições instantâneas da
+forma de onda de corrente durante a ocorrência de faltas reais. Os resultados
+demonstraram que as inter-harmônicas constituem uma assinatura robusta do arco
+intermitente das FAIs e que sua extração por filtros analíticos é compatível
+com a infraestrutura já existente de proteção automática. Essa característica
+torna o método particularmente atrativo do ponto de vista de implantação
+industrial, pois não exige hardware dedicado de alta frequência nem
+modificações estruturais no sistema de proteção \cite{Macedo2015}.
+
 \section{Algoritmos de Inteligência Artificial}\label{sec:ia}
 
 Os métodos baseados em processamento de sinais, embora eficazes na extração
@@ -188,6 +211,30 @@ ignição, torna atrativa a substituição de regras fixas por modelos capazes
 de aprender padrões diretamente dos dados. Esse contexto motivou a aplicação
 crescente de algoritmos de inteligência artificial (IA) ao problema de
 detecção e classificação de FAIs \cite{Aljohani2020}.
+
+Uma abordagem intermediária nessa evolução é representada pelos métodos com
+\textbf{limiar auto-adaptativo} (\textit{self-adaptive threshold}). Ao contrário
+dos detectores com limiar fixo, esses métodos ajustam dinamicamente o critério de
+decisão em função de propriedades estatísticas do sinal monitorado --- como média e
+desvio padrão calculados em janelas deslizantes --- ou de condições operacionais da
+rede, como variações de carga e topologia do alimentador. A premissa é que, durante
+a operação normal, os indicadores extraídos do sinal apresentam comportamento
+estacionário que serve de referência; a detecção ocorre quando uma mudança
+estatisticamente significativa é observada em relação a essa linha de base
+\cite{YuKhan1994, Sedighizadeh2010}.
+
+Uma implementação concreta dessa ideia aplicada especificamente a FAIs é
+apresentada por \cite{KimRussell1993}, que propõem um sistema de
+detecção baseado em um modelo de elemento adaptativo. O sistema combina
+múltiplos algoritmos de detecção operando em diferentes parâmetros de
+frequência e integra seus resultados por meio de pesos associados a cada par
+algoritmo-parâmetro, ajustados dinamicamente por uma fórmula elíptica de
+correção. Diferentemente de um limiar fixo global, o critério de decisão
+final emerge da combinação ponderada dos indicadores individuais, adaptando-se
+ao comportamento do sinal ao longo do tempo. Validado em exemplos de
+classificação falta/não-falta em alimentadores de distribuição, o método
+demonstrou bom desempenho especialmente em segurança contra identificações
+falsas \cite{KimRussell1993}.
 
 Entre os métodos supervisionados, as árvores de decisão foram pioneiras nessa
 transição. \citeonline{5} demonstraram que uma árvore treinada com
@@ -221,80 +268,3 @@ avanço da área \cite{Gomes2021VeHIF}. O presente trabalho se insere nesse
 contexto, propondo a extração e análise sistemática de atributos a partir
 desse conjunto de dados com vistas à construção de um classificador
 supervisionado.
-
-\section{Base de Dados}\label{sec:dataset}
-
-O contexto que motivou a criação da base de dados utilizada neste trabalho
-remonta aos incêndios florestais de \textit{Black Saturday}, ocorridos em
-fevereiro de 2009 no estado de Victoria, Austrália, que resultaram em 173
-mortes e na destruição de mais de 2.000 residências
-\cite{vic_bushfire_report}. Investigações posteriores indicaram que falhas em
-ativos elétricos, incluindo contatos entre condutores de distribuição e
-vegetação, figuraram entre as possíveis causas de alguns dos focos de incêndio.
-Em resposta, o governo de Victoria instituiu o \textit{Powerline Bushfire
-Safety Program} (PBSP), um programa de pesquisa e investimento voltado à
-redução do risco de incêndios originados por linhas de transmissão e
-distribuição \cite{vic_bushfire_report, 8}.
-
-No âmbito do PBSP, foi desenvolvido o \textit{Vegetation Ignition Testing
-Program} (VITP), um programa experimental dedicado ao estudo de faltas de alta
-impedância em vegetação. Os ensaios foram realizados em uma rede de
-distribuição real de 22~kV, trifásica a três fios, operando em condições
-reais de campo e sujeita às mesmas fontes de ruído e variações operacionais
-presentes em sistemas elétricos reais
-\cite{8}. Cada experimento consistia no
-contato controlado entre galhos de espécies vegetais nativas australianas e o
-condutor energizado, registrando-se simultaneamente sinais de tensão e
-corrente por meio de dois canais distintos: um canal de baixa frequência (LF),
-destinado à captura da componente fundamental da forma de onda, e um canal de
-alta frequência (HF), voltado ao registro das componentes espectrais
-associadas ao arco elétrico
-\cite{8}. Essa arquitetura de aquisição
-reflete o entendimento consolidado na literatura de que as assinaturas de arco
-em vegetação manifestam-se predominantemente em frequências superiores à
-fundamental \cite{8}.
-
-O conjunto de dados resultante reúne mais de 900 registros de faltas de alta
-impedância em vegetação, amostrados em alta resolução e abrangendo múltiplas
-espécies, níveis de umidade e configurações de contato
-\cite{Gomes2021VeHIF}. Inicialmente disponibilizado em um formato proprietário
-(\texttt{.pnrf}), com acesso restrito a ferramentas específicas do fabricante,
-o conjunto foi posteriormente reestruturado por
-\citeonline{Gomes2021VeHIF} para o padrão HDF5
-(\textit{Hierarchical Data Format version 5}), amplamente utilizado na
-comunidade científica. A versão reformatada, denominada VeHIF, tornou-se
-acessível em linguagens como Python, MATLAB e C++, acompanhada de scripts de
-compilação, leitura e visualização disponibilizados pelos autores em
-repositório público \cite{Gomes2021VeHIF}. Trabalhos recentes que utilizam o
-VeHIF como benchmark evidenciam sua relevância como referência experimental
-para estudos de detecção de FAIs em vegetação
-\cite{Ozansoy2023}.
-
-O presente trabalho utiliza o conjunto VeHIF como base experimental para as
-etapas de extração e análise de atributos. A disponibilidade de dados reais,
-coletados em condições operacionais autênticas e contemplando diversidade de
-espécies vegetais e cenários de ignição, possibilita a avaliação de técnicas
-de processamento de sinais e aprendizado de máquina sob condições próximas às
-encontradas em campo. Dessa forma, busca-se superar as limitações inerentes a
-bases sintéticas obtidas exclusivamente por simulação
-\cite{Gomes2021VeHIF, 8}.
-
-
-//APAGAR
-
-\section{Vis\~ao Geral do Trabalho}
-## Visão Geral do Trabalho
-
-Este trabalho investiga faltas de alta impedância (FAIs) originadas pelo contato entre condutores de redes de distribuição e vegetação, um problema de elevado risco de ignição e de difícil detecção pelos sistemas de proteção convencionais \cite{1, 2}. O foco central está na caracterização elétrica dessas faltas e na extração sistemática de atributos a partir de sinais reais, com vistas a subsidiar a construção de um classificador supervisionado capaz de distinguir eventos de falta de condições normais de operação da rede.
-
-O trabalho utiliza o conjunto de dados VeHIF \cite{Gomes2021VeHIF}, originado do \textit{Vegetation Ignition Testing Program} (VITP), programa experimental financiado pelo governo de Victoria, Austrália, e conduzido em uma rede de distribuição real de 22~kV \cite{8, vic_bushfire_report}. Esse conjunto reúne mais de 900 registros de FAIs em vegetação amostrados em alta resolução, com canais de baixa e alta frequência, constituindo uma das poucas bases públicas de dados reais disponíveis para esse tipo de estudo \cite{Gomes2021VeHIF}. A disponibilidade dessa base representa um marco na área, pois a escassez histórica de dados reais era apontada como o principal gargalo para o avanço dos métodos de detecção de FAIs em vegetação \cite{Gomes2021VeHIF, Aljohani2020}.
-
-O ciclo completo do trabalho compreende: (i) análise exploratória dos sinais e definição das classes; (ii) pré-processamento e segmentação dos registros; (iii) extração de atributos nos domínios do tempo, da frequência e tempo-frequência; (iv) treinamento e avaliação de classificadores supervisionados; e (v) discussão dos atributos mais discriminativos para o problema.
-
-\subsection{Escopo do Trabalho}
-
-O trabalho propõe-se a caracterizar eletricamente os sinais de FAI em vegetação presentes no conjunto VeHIF, extrair atributos relevantes a partir dos canais LF e HF — incluindo atributos harmônicos, inter-harmônicos, estatísticas de forma de onda e conteúdo espectral de alta frequência — e avaliar a capacidade discriminativa desses atributos por meio de classificação supervisionada.
-
-Não fazem parte do escopo deste trabalho o desenvolvimento de novos modelos de simulação de FAIs, a implementação de sistemas de proteção em tempo real, a aquisição de novos dados de campo nem a generalização dos resultados para outros tipos de superfície de contato que não a vegetação.
-
-O trabalho insere-se no contexto mais amplo do programa PBSP e dos esforços de pesquisa associados ao conjunto VeHIF \cite{8, vic_bushfire_report}. O estado atual da área caracteriza-se pela disponibilidade pública dos dados VeHIF e pela ausência de uma análise sistemática e comparativa dos atributos extraídos desses sinais considerando conjuntamente os canais LF e HF. Ao final deste trabalho, espera-se dispor de um conjunto de atributos caracterizados e de um classificador avaliado em dados reais, contribuindo como referência para estudos futuros de detecção em tempo real.

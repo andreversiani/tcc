@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.11)  11 JUN 2026 02:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.11)  11 JUN 2026 05:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1321,11 +1321,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (main.aux (01-elementos-pre-textuais/capa.aux)
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 19.
- (01-elementos-pre-textuais/folhaRosto.aux) (02-elementos-textuais/introducao.aux) (02-elementos-textuais/revisaobibliografica.aux) (02-elementos-textuais/metodologia.aux
-
-LaTeX Warning: Label `chap:revbibliografica' multiply defined.
-
-) (02-elementos-textuais/visão-geral.aux) (03-elementos-pos-textuais/referencias.aux))
+ (01-elementos-pre-textuais/folhaRosto.aux) (02-elementos-textuais/introducao.aux) (02-elementos-textuais/revisaobibliografica.aux) (02-elementos-textuais/metodologia.aux) (03-elementos-pos-textuais/referencias.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
@@ -1654,41 +1650,29 @@ Cap\'{\i }tulo 2.
 
 
 
-] [4] [5] [6{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [7] [8]
-02-elementos-textuais/revisaobibliografica.tex:286: You can't use `macro parameter character #' in vertical mode.
-l.286 #
-       # Visão Geral do Trabalho
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-02-elementos-textuais/revisaobibliografica.tex:286: You can't use `macro parameter character #' in vertical mode.
-l.286 ##
-         Visão Geral do Trabalho
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-[9]) [10]
+] [4] [5] [6{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}] [7] [8]) [9]
 \openout2 = `02-elementos-textuais/metodologia.aux'.
 
  (02-elementos-textuais/metodologia.tex
 Cap\'{\i }tulo 3.
-) [11
+[10
 
 
 
 
-]
-\openout2 = `02-elementos-textuais/visão-geral.aux'.
+] [11] [12]
+02-elementos-textuais/metodologia.tex:91: Undefined control sequence.
+<argument> E_{1\degree 
+                       \,\mathrm {ciclo}}
+l.91 ...hrm{resto}}}{E_{1\degree\,\mathrm{ciclo}}}
+                                                  ,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
- (02-elementos-textuais/visão-geral.tex [12
-
-
-
-] [13] [14]) [15]
+[13] [14] [15]) [16] [17]
 \openout2 = `./03-elementos-pos-textuais/referencias.aux'.
 
  (03-elementos-pos-textuais/referencias.tex (main.bbl (main.brf)
@@ -1697,16 +1681,16 @@ Cap\'{\i }tulo 3.
 
 
 bibitemlist
-[16
+[18
 
 
 
 
-])) [17]
+])) [19]
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
- (main.aux (01-elementos-pre-textuais/capa.aux) (01-elementos-pre-textuais/folhaRosto.aux) (02-elementos-textuais/introducao.aux) (02-elementos-textuais/revisaobibliografica.aux) (02-elementos-textuais/metodologia.aux) (02-elementos-textuais/visão-geral.aux) (03-elementos-pos-textuais/referencias.aux))
+ (main.aux (01-elementos-pre-textuais/capa.aux) (01-elementos-pre-textuais/folhaRosto.aux) (02-elementos-textuais/introducao.aux) (02-elementos-textuais/revisaobibliografica.aux) (02-elementos-textuais/metodologia.aux) (03-elementos-pos-textuais/referencias.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1715,24 +1699,21 @@ L3 programming layer <2020/03/25>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.brf' has not changed.
-(rerunfilecheck)             Checksum: 6061A5C95D590CF5C5EBB64C649CA3F9;5599.
+(rerunfilecheck)             Checksum: 9854F80CAB226AE16E9E21FDF166B4CD;4951.
  ) 
 Here is how much of TeX's memory you used:
- 36544 strings out of 467870
- 653576 string characters out of 5428419
- 1145144 words of memory out of 5000000
- 64519 multiletter control sequences out of 15000+600000
- 693990 words of font info for 177 fonts, out of 8000000 for 9000
+ 36592 strings out of 467870
+ 653287 string characters out of 5428419
+ 1145002 words of memory out of 5000000
+ 64535 multiletter control sequences out of 15000+600000
+ 698169 words of font info for 190 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,12n,121p,1051b,812s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (20 pages, 386685 bytes).
+ 113i,13n,121p,1051b,905s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (22 pages, 423420 bytes).
 PDF statistics:
- 600 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 39117 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 583 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 41125 words of extra memory for PDF output out of 42996 (max. 10000000)
 

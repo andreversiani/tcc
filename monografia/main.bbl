@@ -62,6 +62,12 @@ Dispon{\'\i}vel em:
   inductive reasoning and expert system methodology.
 \textbf{IEEE Power Engineering Review}, 1989.}
 
+\bibitem[Kim e Russell 1993]{KimRussell1993}
+\abntrefinfo{Kim e Russell}{KIM; RUSSELL}{1993}
+{KIM, C.~J.; RUSSELL, B. High-impedance fault detection system using an
+  adaptive element model.
+\textbf{IEE Proceedings C -- Generation, Transmission and Distribution}, 1993.}
+
 \bibitem[Lima et al. 2018]{7}
 \abntrefinfo{Lima et al.}{LIMA et al.}{2018}
 {LIMA, {\'E}.~M.; JUNQUEIRA, C. M.~S.; BRITO, N.; SOUZA, B.~A.; COELHO, R.
@@ -145,5 +151,11 @@ Dispon{\'\i}vel em:
 {YANG, C.; ZHANG, W.; TANG, R.; XIAO, X. Tree-related high-impedance fault in
   distribution systems: Modeling, detection, and ignition risk assessment.
 \textbf{Energies}, 2025.}
+
+\bibitem[Yu e Khan 1994]{YuKhan1994}
+\abntrefinfo{Yu e Khan}{YU; KHAN}{1994}
+{YU, D.~C.; KHAN, S.~H. An adaptive high and low impedance fault detection
+  method.
+\textbf{IEEE Transactions on Power Delivery}, v.~9, n.~4, p. 1812--1821, 1994.}
 
 \end{thebibliography}
