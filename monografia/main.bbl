@@ -1,0 +1,149 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Aljohani e Habiballah 2020]{Aljohani2020}
+\abntrefinfo{Aljohani e Habiballah}{ALJOHANI; HABIBALLAH}{2020}
+{ALJOHANI, A.~S.; HABIBALLAH, I. High-impedance fault diagnosis: A review.
+\textbf{Energies}, v.~13, n.~23, p.~6447, 2020.}
+
+\bibitem[Aucoin e Jones 1996]{3}
+\abntrefinfo{Aucoin e Jones}{AUCOIN; JONES}{1996}
+{AUCOIN, B.~M.; JONES, R.~H. High impedance fault detection implementation
+  issues.
+\textbf{IEEE Transactions on Power Delivery}, 1996.}
+
+\bibitem[Aucoin e Russell 1982]{1}
+\abntrefinfo{Aucoin e Russell}{AUCOIN; RUSSELL}{1982}
+{AUCOIN, B.~M.; RUSSELL, B. Distribution high impedance fault detection
+  utilizing high frequency current components.
+\textbf{IEEE Transactions on Power Apparatus and Systems}, 1982.}
+
+\bibitem[Elkalashy et al. 2007]{Elkalashy2007}
+\abntrefinfo{Elkalashy et al.}{ELKALASHY et al.}{2007}
+{ELKALASHY, N.; LEHTONEN, M.; DARWISH, H.~A.; IZZULARAB, M.; TAALAB, A.
+  Modeling and experimental verification of high impedance arcing fault in
+  medium voltage networks.
+\textbf{IEEE Transactions on Dielectrics and Electrical Insulation}, 2007.}
+
+\bibitem[Gomes e Ozansoy 2022]{Gomes2021VeHIF}
+\abntrefinfo{Gomes e Ozansoy}{GOMES; OZANSOY}{2022}
+{GOMES, D.~P.; OZANSOY, C. Vehif: An accessible vegetation high-impedance fault
+  data set format.
+\textbf{IEEE Transactions on Power Delivery}, 2022.}
+
+\bibitem[Gomes et al. 2018]{8}
+\abntrefinfo{Gomes et al.}{GOMES et al.}{2018}
+{GOMES, D.~P.; OZANSOY, C.; ULHAQ, A. High-sensitivity vegetation
+  high-impedance fault detection based on signal's high-frequency contents.
+\textbf{IEEE Transactions on Power Delivery}, 2018.}
+
+\bibitem[Huang et al. 1988]{Huang1988}
+\abntrefinfo{Huang et al.}{HUANG et al.}{1988}
+{HUANG, C.; CHU, H.; CHEN, M.-T. Algorithm comparison for high impedance fault
+  detection based on staged fault test.
+\textbf{IEEE Transactions on Power Delivery}, 1988.}
+
+\bibitem[{International Energy Agency} 2020]{iea_electricity_security}
+\abntrefinfo{{International Energy Agency}}{{International Energy
+  Agency}}{2020}
+{{International Energy Agency}. \textbf{Electricity security matters more than
+  ever}. 2020.
+Acesso em: 17 abr. 2026.
+Dispon{\'\i}vel em:
+  \url{https://www.iea.org/reports/power-systems-in-transition/electricity-security-matters-more-than-ever}.}
+
+\bibitem[Kim e Russell 1989]{KimRussell1989}
+\abntrefinfo{Kim e Russell}{KIM; RUSSELL}{1989}
+{KIM, C.~J.; RUSSELL, B. Classification of faults and switching events by
+  inductive reasoning and expert system methodology.
+\textbf{IEEE Power Engineering Review}, 1989.}
+
+\bibitem[Lima et al. 2018]{7}
+\abntrefinfo{Lima et al.}{LIMA et al.}{2018}
+{LIMA, {\'E}.~M.; JUNQUEIRA, C. M.~S.; BRITO, N.; SOUZA, B.~A.; COELHO, R.
+  D.~A.; MEDEIROS, H. G. M.~S. High impedance fault detection method based on
+  the short-time fourier transform.
+\textbf{IET Generation, Transmission \& Distribution}, 2018.}
+
+\bibitem[Ma et al. 2020]{Ma2020}
+\abntrefinfo{Ma et al.}{MA et al.}{2020}
+{MA, J.; CHENG, J. C.~P.; JIANG, F.; GAN, V.; WANG, M.; ZHAI, C. Real-time
+  detection of wildfire risk caused by powerline vegetation faults using
+  advanced machine learning techniques.
+\textbf{Advanced Engineering Informatics}, v.~46, 2020.}
+
+\bibitem[Macedo et al. 2015]{Macedo2015}
+\abntrefinfo{Macedo et al.}{MACEDO et al.}{2015}
+{MACEDO, J.~R.; RESENDE, J.; BISSOCHI, C.; CARVALHO, D.~P.; CASTRO, F.
+  Proposition of an interharmonic-based methodology for high-impedance fault
+  detection in distribution systems.
+\textbf{IET Generation, Transmission \& Distribution}, 2015.}
+
+\bibitem[Nam et al. 2001]{4}
+\abntrefinfo{Nam et al.}{NAM et al.}{2001}
+{NAM, S.; PARK, J.; KANG, Y.~C.; KIM, T. A modeling method of a high impedance
+  fault in a distribution system using two series time-varying resistances in
+  emtp. In:  \textbf{IEEE Power Engineering Society Summer Meeting}. [S.l.:
+  s.n.], 2001.}
+
+\bibitem[Ozansoy 2023]{Ozansoy2023}
+\abntrefinfo{Ozansoy}{OZANSOY}{2023}
+{OZANSOY, C. Vehif current arcing, volatility and vegetation ignition
+  development: An emd based volatility analysis for earth-fault classification.
+\textbf{Engineering Science and Technology, an International Journal}, 2023.}
+
+\bibitem[Ozansoy e Gomes 2020]{Ozansoy2020}
+\abntrefinfo{Ozansoy e Gomes}{OZANSOY; GOMES}{2020}
+{OZANSOY, C.; GOMES, D.~P. Electrical and physical characterization of earth
+  faults for diverse bush species.
+\textbf{Engineering Science and Technology, an International Journal}, 2020.}
+
+\bibitem[Santos et al. 2017]{6}
+\abntrefinfo{Santos et al.}{SANTOS et al.}{2017}
+{SANTOS, W.~C.; LOPES, F.~V.; BRITO, N.; SOUZA, B.~A. High-impedance fault
+  identification on distribution networks.
+\textbf{IEEE Transactions on Power Delivery}, 2017.}
+
+\bibitem[Sedighizadeh et al. 2010]{Sedighizadeh2010}
+\abntrefinfo{Sedighizadeh et al.}{SEDIGHIZADEH et al.}{2010}
+{SEDIGHIZADEH, M.; REZAZADEH, A.; ELKALASHY, N. Approaches in high impedance
+  fault detection -- a chronological review.
+\textbf{Advances in Electrical and Computer Engineering}, 2010.}
+
+\bibitem[Sheng e Rovnyak 2004]{5}
+\abntrefinfo{Sheng e Rovnyak}{SHENG; ROVNYAK}{2004}
+{SHENG, Y.; ROVNYAK, S.~M. Decision tree-based methodology for high impedance
+  fault detection.
+\textbf{IEEE Transactions on Power Delivery}, 2004.}
+
+\bibitem[{Victorian Government} 2014]{vic_bushfire_report}
+\abntrefinfo{{Victorian Government}}{{Victorian Government}}{2014}
+{{Victorian Government}. \textbf{Powerline Bushfire Safety Program: Vegetation
+  Conduction Ignition Test Report}. 2014.
+Acesso em: 08 abr. 2026.
+Dispon{\'\i}vel em:
+  \url{https://discover.data.vic.gov.au/dataset/powerline-bushfire-safety-program-vegetation-conduction-ignition-test-report}.}
+
+\bibitem[Wang e Cui 2022]{WangCui2022}
+\abntrefinfo{Wang e Cui}{WANG; CUI}{2022}
+{WANG, B.; CUI, X. Nonlinear modeling analysis and arc high-impedance faults
+  detection in active distribution networks with neutral grounding via petersen
+  coil.
+\textbf{IEEE Transactions on Smart Grid}, 2022.}
+
+\bibitem[Wester 1998]{2}
+\abntrefinfo{Wester}{WESTER}{1998}
+{WESTER, C. High impedance fault detection on distribution systems. In:
+  \textbf{Rural Electric Power Conference}. [S.l.: s.n.], 1998.}
+
+\bibitem[Yang et al. 2025]{9}
+\abntrefinfo{Yang et al.}{YANG et al.}{2025}
+{YANG, C.; ZHANG, W.; TANG, R.; XIAO, X. Tree-related high-impedance fault in
+  distribution systems: Modeling, detection, and ignition risk assessment.
+\textbf{Energies}, 2025.}
+
+\end{thebibliography}
